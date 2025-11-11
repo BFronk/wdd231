@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <!-- <script src="scripts/navigation.js"></script> -->
 </head>
 <body>
     <main>
@@ -38,7 +37,7 @@
             </div>
             <div id="web-certificate-courses">
                 <h2>Web certificate courses</h2>
-                <section #id="subjects">
+                <section id="subjects">
                     <div id="allButton" class="course-box">
                         <h1>ALL</h1>
                     </div>
@@ -55,7 +54,76 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        
+    </footer>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for WDD 231 on BYU Pathways">
+    <meta name="author" content="Bridger Fronk">
+    <title>Bridger Fronk | WDD 231</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="images/home.svg" alt="Site Logo" height="512" width="512">
+            <span>Bridger's Site</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </header>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="home">Home</h1>
+        
+        <section id="main-section">
+            <div id="about-me">
+                <h2>About Me</h2>
+                <div id="about-me-text">
+                   Hi! My name is Bridger Fronk, I am 22 years old and I live in Vero Beach, Florida(United States). 
+                   I love to go to amusement parks, bowl, and play any kind of game. This is my 6th semester in Pathways 
+                   and I have been loving it so far! I can't wait to learn and grow with all of you!
+                </div>
+            </div>
+
+            <div id="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/self_image.png" alt="Bridger Fronk">
+            </div>
+
+            <div id="web-certificate-courses">
+                <h2>Web Certificate Courses</h2>
+
+                <section id="subjects">
+                    <button id="allButton" class="course-box active">ALL</button>
+                    <button id="wddButton" class="course-box">WDD</button>
+                    <button id="cseButton" class="course-box">CSE</button>
+                </section>
+
+                <section class="courses"></section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
     <script src="scripts/navigation.js"></script>
 </body>
 </html>
