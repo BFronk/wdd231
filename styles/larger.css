@@ -1,0 +1,53 @@
+@media only screen and (min-width:38rem) {
+    /* header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    } */
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation a {
+        border: none;
+    }
+    #about-me-text {
+    font-size: 24px;
+    }
+}
+
+@media only screen and (min-width:50rem) {
+    #about-me-text {
+        font-size: 30px;
+    }
+    #about-me {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width:70rem) {
+    #about-me-text {
+        font-size: 36px;
+    }
+    #about-me {
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width:90rem) {
+    #about-me-text {
+        font-size: 42px;
+    }
+    #about-me {
+        height:350px;
+    }
+}
