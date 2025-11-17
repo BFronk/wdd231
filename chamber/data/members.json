@@ -8,7 +8,7 @@
             "email": "kjsdzfghcilusjhbdgfv@gmail.com",
             "url": "htpps://ljmnjfcjfd.com",
             "membership": 1,
-            "image": "images/jeff.png"
+            "image": "images/sally.png"
         },
         {
             "name": "Jeff",
@@ -38,7 +38,7 @@
             "email": "aguivhgsi@gmail.com",
             "url": "htpps://yufdgUAYWFHCiua.com",
             "membership": 3,
-            "image": "images/jeff.png"
+            "image": "images/bob.png"
         },
         {
             "name": "Nancy",
@@ -48,7 +48,7 @@
             "email": "kshfdgcbjh@aol.com",
             "url": "htpps://",
             "membership": 1,
-            "image": "images/jeff.png"
+            "image": "images/nancy.png"
         },
         {
             "name": "Fred",
@@ -58,7 +58,7 @@
             "email": "kdsjzbfhvcpiuasd@yahoo.com",
             "url": "htpps://ayfhcvjk.com",
             "membership": 2,
-            "image": "images/jeff.png"
+            "image": "images/fred.png"
         }
     ]
 }

@@ -1,5 +1,7 @@
 const hamBtn = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
+    const footer = document.querySelector('footer');
+
 
 hamBtn.addEventListener('click', () => {
     hamBtn.classList.toggle('show');
