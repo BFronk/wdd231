@@ -1,7 +1,64 @@
 {
-    "members" {
+    "members": [
         {
-
+            "name": "Sally",
+            "buisness": "Electric",
+            "address": "3652 A ave",
+            "phone": "357-357-3906",
+            "email": "kjsdzfghcilusjhbdgfv@gmail.com",
+            "url": "htpps://ljmnjfcjfd.com",
+            "membership": 1,
+            "image": "images/jeff.png"
         },
-    }
+        {
+            "name": "Jeff",
+            "address": "7145 B ave",
+            "buisness": "Water",
+            "phone": "536-729-6173",
+            "email": "hjsdgfvjagsBdzyf@gmail.com",
+            "url": "askjdghvliujhbgv>com",
+            "membership": 2,
+            "image": "images/jeff.png"
+        },
+        {
+            "name": "Bill",
+            "address": "3679 C Ave",
+            "buisness": "History",
+            "phone": "698-423-5485",
+            "email": "soigdvhjeazsijkd@gmail.com",
+            "url": "htpps://fhjcghufg.cnet",
+            "membership": 3,
+            "image": "images/bill.png"
+        },
+        {
+            "name": "Bob",
+            "address": "8345 D Ave",
+            "buisness": "Tech",
+            "phone": "759-428-9142",
+            "email": "aguivhgsi@gmail.com",
+            "url": "htpps://yufdgUAYWFHCiua.com",
+            "membership": 3,
+            "image": "images/jeff.png"
+        },
+        {
+            "name": "Nancy",
+            "address": "8932 E Ave",
+            "buisness": "Science",
+            "phone": "952-163-0797",
+            "email": "kshfdgcbjh@aol.com",
+            "url": "htpps://",
+            "membership": 1,
+            "image": "images/jeff.png"
+        },
+        {
+            "name": "Fred",
+            "address": "9526 F Ave",
+            "buisness": "Medical",
+            "phone": "950-539-5341",
+            "email": "kdsjzbfhvcpiuasd@yahoo.com",
+            "url": "htpps://ayfhcvjk.com",
+            "membership": 2,
+            "image": "images/jeff.png"
+        }
+    ]
 }
