@@ -17,7 +17,7 @@ async function GetData(file) {
 }
 
 //  Load data and render
-GetData('data/member.json')
+GetData('data/members.json')
     .then(data => {
         generatePeopleFigures(data.members);
     })
