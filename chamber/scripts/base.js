@@ -91,6 +91,17 @@ function generatePeopleFigures(personData) {
     });
 }
 
+
+function generateSpotlights(personData) {
+    const spotlights = document.querySelector('#spotlight-list')
+    spotlights.innerHTML = ''; // Clear existing content
+        const eligibleMembers = members.filter(member => 
+        person.membership === 'gold' ||
+        person.membership === 'silver'
+    );
+    
+    }
+    
 //Footer
 
 const currentYear = new Date().getFullYear();
@@ -102,3 +113,59 @@ footerP.innerHTML = `
     Last Modified: ${lastModified}
 `;
 footer.appendChild(footerP);
+
+// =========INDEX==============
+// SELECT HTML ELEMENTS IN THE DOCUMENT
+const myTown = document. querySelector('#town');
+const myDecription = document. querySelector('#description');
+const myTemperature = document. querySelector('#temperature');
+const myGraphic = document. querySelector('#graphic');
+// CREATE REQUIED VARIABLES FOR THE URL
+const myKey = "5d80e10b09ffb64959eb48570364746d"
+const myLat = "27.63"
+const myLon = "-80.39"
+//CONSTRUCT A FULL PATH USING TEMPLATE LITERALS
+const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`
+const myForecastURL = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`
+// TRY TO GRAB THE CURRENT WEATHER DATA
+async function apiFetch() {
+try {
+const response = await fetch (myURL);
+if (response.ok) {
+const data = await response.json();
+console.log(data); // testing only
+displayResults(data); // uncomment when ready
+} else {
+throw Error(await response. text ());
+}
+} catch (error) {
+console. log(error);
+}
+}
+async function forcecastApiFetch() {
+try {
+const response = await fetch (myForecastURL);
+if (response.ok) {
+const data = await response.json();
+console.log(data); // testing only
+displayForecastResults(data); // uncomment when ready
+console.log("chicken")
+} else {
+throw Error(await response. text ());
+}
+} catch (error) {
+console.log(error);
+}
+}
+function displayResults(data) {
+    console.log('hello world');
+    myTown.innerHTML = data.name
+    myDecription.innerHTML = data.weather[0].description
+    myTemperature.innerHTML = `${data.main.temp}&degF`
+}
+function displayForecastResults(data) {
+
+}
+// START THE PROCESS
+apiFetch()
+forcecastApiFetch()
