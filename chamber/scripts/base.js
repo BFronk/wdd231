@@ -226,3 +226,12 @@ goldButton.addEventListener("click", () => {
 goldClose.addEventListener("click", () => {
     goldModal.close();  
 });
+
+
+const myInfo = URLSearchParams(window.location.search);
+console.log(window.location.search)
+console.log(myInfo.get('fname'))
+document.querySelector("#results").innerHTML = `
+<p>First Name: ${myInfo.get('fname')}</p>
+Last Name: ${myInfo.get('lname')}
+`

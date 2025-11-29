@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Join</title>
     <meta name="description" content="Home page for chamber website. Follow this page to get updates on the community">
     <meta name="author" content="Bridger Fronk">
     <link rel="stylesheet" href="styles/main.css">
@@ -31,20 +31,22 @@
             <li><a href="about.html">Discover</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="join-main">
         <form action="sumbit.html" method="get" class="wform">
             <fieldset>
                 <label>First Name</label><input type="text" name="fname" autocomplete="given-name"></input>
                 <label>Last Name</label><input type="text" name="lname" autocomplete="family-name"></input>
-                <label>Title</label><input type="text" name="lname" autocomplete="family-name"></input>
-                <label>Email</label><input type="text" name="lname" autocomplete="family-name"></input>
-                <label>Phone</label><input type="text" name="lname" autocomplete="family-name"></input>
-                <label>Orgainization</label><input type="text" name="lname" autocomplete="family-name"></input>
+                <label>Title</label><input type="text" name="title" autocomple="organization-title"></input>
+                <label>Email</label><input type="text" name="email" autocomplete="family-name"></input>
+                <label>Phone</label><input type="text" name="phone" autocomplete="family-name"></input>
+                <label>Orgainization</label><input type="text" name="org" autocomplete="family-name"></input>
                 <label>Membership</label>
                 <label><input class="picker" type="radio" name="audience" value="non-profit">Non-Profit</label>
                 <label><input class="picker" type="radio" name="audience" value="bronze">Bronze</label>
                 <label><input class="picker" type="radio" name="audience" value="silver">Silver</label>
                 <label><input class="picker" type="radio" name="audience" value="gold">Gold</label>
+                <label>Buisness description</label>
+                <input type="submit" Value="Submit my Response">
                        
             </fieldset>
         </form>
