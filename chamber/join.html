@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join</title>
-    <meta name="description" content="Home page for chamber website. Follow this page to get updates on the community">
+    <meta name="description" content="join page for chamber website. Follow this page to get updates on the community">
     <meta name="author" content="Bridger Fronk">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/large.css">
     <meta property="og:title" content="Directory">
-    <meta property="og:description" content="home page for the chamber site. ">
+    <meta property="og:description" content="join page for the chamber site. Follow this page to get updates on the community">
     <meta property="og:url" content="index.html">
     <meta property="og:image" content="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,18 +34,19 @@
     <main id="join-main">
         <form action="sumbit.html" method="get" class="wform">
             <fieldset>
-                <label>First Name</label><input type="text" name="fname" autocomplete="given-name"></input>
-                <label>Last Name</label><input type="text" name="lname" autocomplete="family-name"></input>
+                <label>First Name</label><input type="text" title="Your First Name" name="fname" autocomplete="given-name"></input>
+                <label>Last Name</label><input type="text" title="Your Last Name"name="lname" autocomplete="family-name"></input>
                 <label>Title</label><input type="text" name="title" autocomple="organization-title"></input>
-                <label>Email</label><input type="text" name="email" autocomplete="family-name"></input>
-                <label>Phone</label><input type="text" name="phone" autocomplete="family-name"></input>
+                <label>Email</label><input type="email" name="email" autocomplete="family-name"></input>
+                <label>Phone</label><input type="tel" name="phone" autocomplete="family-name"></input>
                 <label>Orgainization</label><input type="text" name="org" autocomplete="family-name"></input>
                 <label>Membership</label>
-                <label><input class="picker" type="radio" name="audience" value="non-profit">Non-Profit</label>
-                <label><input class="picker" type="radio" name="audience" value="bronze">Bronze</label>
-                <label><input class="picker" type="radio" name="audience" value="silver">Silver</label>
-                <label><input class="picker" type="radio" name="audience" value="gold">Gold</label>
+                <label><input class="picker" type="radio" name="audience" value="np">np</label>
+                <label><input class="picker" type="radio" name="audience" value="bronze">bronze</label>
+                <label><input class="picker" type="radio" name="audience" value="silver">silver</label>
+                <label><input class="picker" type="radio" name="audience" value="gold">gold</label>
                 <label>Buisness description</label>
+
                 <input type="submit" Value="Submit my Response">
                        
             </fieldset>
@@ -86,6 +87,6 @@
     <footer>
 
     </footer>
-    <script src="scripts/base.js"> </script>
+    <script src="scripts/base.js"> defer</script>
 </body>
 </html>
