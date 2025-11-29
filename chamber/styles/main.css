@@ -81,3 +81,51 @@ footer {
     background-color: rgb(189, 230, 230);
     border-radius: 5px
 }
+
+/* ------JOIN------ */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.modal-button {
+    font-size: 14px;
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+}
+form {
+    grid-row: 1/5;
+}
+.tier-section {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    text-align: center;
+    background-color: #c6c6c6;
+    margin: 5px;
+    border-radius: 10px;
+}
+fieldset {
+    border-radius: 10px;
+}
+
+.picker {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+form input {
+    height: 20px;
+}
+
+
+
+
+form label{
+    text-decoration: underline;
+    display: block;
+    font-size: 18px;
+    margin: 10px;}
