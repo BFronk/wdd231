@@ -1,0 +1,47 @@
+div {
+    font-size: large;
+    text-align: center;
+    padding: 5px;
+}
+
+#color {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+#color1 {
+    color: red;
+}
+
+#color2 {
+    color: rgb(173, 211, 245);
+}
+
+#color3 {
+    color: black;
+}
+
+#roboto {
+    font-family: "Roboto";
+}
+
+#bbh-sans-bogle {
+    font-family: "BBH Sans Bogle";
+}
+
+img {
+    height: 400px;
+}
+
+#wireframetxt {
+    font-size: 24px;
+}
+
+#wireframes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    justify-items: center;
+}
