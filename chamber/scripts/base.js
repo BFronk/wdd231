@@ -1,6 +1,6 @@
 const hamBtn = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
-    const footer = document.querySelector('footer');
+const footer = document.querySelector('footer');
 
 
 hamBtn.addEventListener('click', () => {
@@ -185,5 +185,48 @@ forcecastApiFetch()
 // })
 
 
+//====== Discover Vero Beach =======
+// import { attractions } from 'vero-beach.mjs';
 
+// const grid = document.getElementById('discover-grid');
+// const visitMessage = document.getElementById('visit-message');
+
+// // Build the cards
+// attractions.forEach((place, index) => {
+//     const card = document.createElement('article');
+//     card.className = 'discover-card';
+//     card.style.gridArea = `card${index + 1}`;
+
+//     card.innerHTML = `
+//         <h2>${place.name}</h2>
+//         <figure>
+//             <img src="${place.image}" alt="${place.alt}" loading="lazy" width="300" height="200">
+//         </figure>
+//         <address>${place.address}</address>
+//         <p>${place.description}</p>
+//         <button class="learn-more">Learn More</button>
+//     `;
+
+//     grid.appendChild(card);
+// });
+
+// // Visit message logic
+// const msToDays = 84600000; // milliseconds in a day
+// const lastVisit = localStorage.getItem('lastVisit');
+// const now = Date.now();
+
+// if (!lastVisit) {
+//     visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+// } else {
+//     const daysBetween = Math.floor((now - parseInt(lastVisit)) / msToDays);
+
+//     if (daysBetween < 1) {
+//         visitMessage.textContent = "Back so soon! Awesome!";
+//     } else if (daysBetween === 1) {
+//         visitMessage.textContent = "You last visited 1 day ago.";
+//     } else {
+//         visitMessage.textContent = `You last visited ${daysBetween} days ago.`;
+//     }
+// }
+// localStorage.setItem('lastVisit', now);
 

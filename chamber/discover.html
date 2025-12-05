@@ -6,36 +6,58 @@
     <title>Home</title>
     <meta name="description" content="Home page for chamber website. Follow this page to get updates on the community">
     <meta name="author" content="Bridger Fronk">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Vero Beach | Chamber of Commerce</title>
+    <meta name="description" content="Discover the beauty, culture, and attractions of Vero Beach, Florida">
+    <meta name="author" content="Bridger Fronk">
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/large.css">
-    <meta property="og:title" content="Directory">
-    <meta property="og:description" content="home page for the chamber site. ">
-    <meta property="og:url" content="index.html">
-    <meta property="og:image" content="favicon.ico">
+    <link rel="icon" href="chamber.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">   
-    <link rel="icon" href="chamber.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Discover Vero Beach">
+    <meta property="og:description" content="Explore the attractions and community of Vero Beach">
+    <meta property="og:url" content="discover.html">
+    <meta property="og:image" content="images/chamber.svg">
 </head>
 <body>
     <header>
-        <img src="images/chamber.svg" alt="Site Logo" height="512" width="512">
+        <img src="images/chamber.svg" alt="Chamber Logo" height="512" width="512">
         <span>Chamber Of Commerce</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
+
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="about.html">Discover</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
-    <main>
-    </main>
-    <footer>
 
+    <main class="discover-main">
+        <section id="visit-message" class="visit-message" aria-live="polite"></section>
+
+        <h1>Discover Vero Beach</h1>
+
+        <section id="discover-grid">
+            <!-- Cards will be injected here by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        
     </footer>
-    <script src="scripts/base.js"> </script>
+
+    <script type="module" src="scripts/discover.js"></script>
 </body>
 </html>
