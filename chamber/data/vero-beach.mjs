@@ -4,21 +4,21 @@ export const attractions = [
         name: "McKee Botanical Garden",
         address: "350 US Highway 1, Vero Beach, FL 32962",
         description: "An 18-acre subtropical jungle with rare plants, streams, and historic structures.",
-        image: "images/mckee.jpg",
-        alt: "McKee Botanical Garden waterfall"
+        image: "images/mckee.webp",
+        alt: "McKee Botanical Gardens"
     },
     {
         name: "Vero Beach Museum of Art",
         address: "3001 Riverside Park Dr, Vero Beach, FL 32963",
         description: "Features rotating exhibitions, sculpture garden, and art classes for all ages.",
-        image: "images/vero-art.jpg",
+        image: "images/vero-art.webp",
         alt: "Vero Beach Museum of Art"
     },
     {
         name: "Indian River Citrus Museum",
         address: "2140 14th Ave, Vero Beach, FL 32960",
         description: "Celebrates Florida's citrus heritage with vintage tools and packinghouse displays.",
-        image: "images/citrus-museum.jpeg",
+        image: "images/citrus-museum.webp",
         alt: "Indian River Citrus Museum"
     },
     {
@@ -26,14 +26,14 @@ export const attractions = [
         address: "1339 20th St, Vero Beach, FL 32960",
         description: "America's first national wildlife refuge, home to hundreds of bird species.",
         image: "images/pelican-island.webp",
-        alt: "Pelican Island observation tower"
+        alt: "Pelican Island"
     },
     {
         name: "Riverside Theatre",
         address: "3250 Riverside Park Dr, Vero Beach, FL 32963",
         description: "Professional live theatre with Broadway-quality shows and comedy nights.",
         image: "images/riverside-theatre.webp",
-        alt: "Riverside Theatre at night"
+        alt: "Riverside Theatre"
     },
     {
         name: "Vero Beach Farmers Market",
@@ -53,7 +53,7 @@ export const attractions = [
         name: "Environmental Learning Center",
         address: "255 Live Oak Dr, Vero Beach, FL 32963",
         description: "Interactive campus on the Indian River Lagoon with trails and touch tanks.",
-        image: "images/elc-lagoon.webp",
-        alt: "Environmental Learning Center boardwalk"
+        image: "images/environmental-learning-center.webp",
+        alt: "Environmental Learning Center"
     }
 ];
