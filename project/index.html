@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vero Beach Chamber</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="chamber.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/chamber.svg" alt="Chamber Logo">
+        <span>Chamber Of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Welcome to Vero Beach</h1>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Vero Beach" loading="lazy">
+            <div class="hero-text">
+                <h2>Grow Your Business With Us</h2>
+                <button id="premium-btn">Get Premium - Only $4.99/mo</button>
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-list"></div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- Premium Modal -->
+    <dialog id="premium-modal">
+        <button class="close-btn">×</button>
+        <h2>Go Premium</h2>
+        <p>Unlock exclusive benefits!</p>
+        <div class="pricing">
+            <div class="price-card">
+                <h3>Monthly</h3>
+                <p class="price">$4.99<span>/month</span></p>
+                <button class="choose">Choose</button>
+            </div>
+            <div class="price-card best">
+                <h3>Yearly <span>Best Value</span></h3>
+                <p class="price">$29.99<span>/year</span></p>
+                <button class="choose">Choose</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="scripts/base.js"></script>
+</body>
+</html>

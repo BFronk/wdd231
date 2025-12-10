@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="chamber.ico">
+</head>
+<body>
+    <header>
+        <img src="images/chamber.svg" alt="Chamber Logo">
+        <span>Chamber Of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main id="join-main">
+        <form action="submit.html" method="get" class="wform">
+            <fieldset>
+                <label>First Name</label><input type="text" title="Your First Name" name="first name" autocomplete="given-name" required></input>
+                <label>Last Name</label><input type="text" title="Your Last Name" name="last name" autocomplete="family-name" required></input>
+                <label>Title</label><input type="text" name="title" autocomple="organization-title" required></input>
+                <label>Email</label><input type="email" name="email" autocomplete="family-name" required></input>
+                <label>Phone</label><input type="tel" name="phone" autocomplete="family-name" required></input>
+                <label>Orgainization</label><input type="text" name="org" autocomplete="family-name" required></input>
+                <label>Membership</label>
+                <label>Buisness description</label><textarea name="Buisness" title="buisness description"></textarea>
+                <input type="submit" Value="Submit my Response">         
+            </fieldset>
+        </form>
+    </main>
+
+    <footer></footer>
+    <script src="scripts/base.js"></script>
+</body>
+</html>
