@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vero Beach Chamber</title>
+    <title>Bowling Stat Aggregator</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="chamber.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Home BSA">
+    <meta property="og:description" content="Keep track of statistics and connect with other bowlers.">
+    <meta property="og:url" content="https://bfronk.github.io/wdd231/home/index.html">
+    <meta property="og:image" content="https://bfronk.github.io/wdd231/home/images/og-discover-vero-beach.webp">
 </head>
 <body>
     <header>
         <img src="images/chamber.svg" alt="Chamber Logo">
-        <span>Chamber Of Commerce</span>
+        <span>Bowling Stat Aggregator</span>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
 
@@ -24,13 +28,11 @@
     </nav>
 
     <main>
-        <h1>Welcome to Vero Beach</h1>
         <section class="hero">
-            <img src="images/hero.jpg" alt="Vero Beach" loading="lazy">
-            <div class="hero-text">
-                <h2>Grow Your Business With Us</h2>
-                <button id="premium-btn">Get Premium - Only $4.99/mo</button>
-            </div>
+            <h1 id="welcome-message">Welcome, Bowler!</h1>
+            <img src="images/hero.jpg" alt="Hero" loading="lazy">
+            
+            <button id="add-game-btn">Add Game</button>
         </section>
 
         <section class="spotlights">
@@ -41,23 +43,23 @@
 
     <footer></footer>
 
-    <!-- Premium Modal -->
-    <dialog id="premium-modal">
-        <button class="close-btn">×</button>
-        <h2>Go Premium</h2>
-        <p>Unlock exclusive benefits!</p>
-        <div class="pricing">
-            <div class="price-card">
-                <h3>Monthly</h3>
-                <p class="price">$4.99<span>/month</span></p>
-                <button class="choose">Choose</button>
-            </div>
-            <div class="price-card best">
-                <h3>Yearly <span>Best Value</span></h3>
-                <p class="price">$29.99<span>/year</span></p>
-                <button class="choose">Choose</button>
-            </div>
+    <!-- Add Game Form (hidden by default) -->
+    <dialog id="add-game-modal">
+        <div class="modal-header">
+            <h2>Add Your Game</h2>
+            <button class="close-modal">×</button>
         </div>
+        <form id="game-form">
+            <label>
+                Score: 
+                <input type="number" id="score" min="0" max="300" required placeholder="e.g. 245">
+            </label>
+            <label>
+                Strikes this game: 
+                <input type="number" id="strikes" min="0" max="12" required placeholder="e.g. 8">
+            </label>
+            <button type="submit">Save Game</button>
+        </form>
     </dialog>
 
     <script src="scripts/base.js"></script>

@@ -6,11 +6,16 @@
     <title>Join</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="chamber.ico">
+    <meta property="og:title" content="Join BSA">
+    <meta property="og:description" content="Keep track of statistics and connect with other bowlers. ">
+    <meta property="og:url" content="https://bfronk.github.io/wdd231/join/index.html">
+    <meta property="og:image" content="https://bfronk.github.io/wdd231/join/images/og-discover-vero-beach.webp">
+
 </head>
 <body>
     <header>
         <img src="images/chamber.svg" alt="Chamber Logo">
-        <span>Chamber Of Commerce</span>
+        <span>Bowling Stat Aggregator</span>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
 
@@ -36,9 +41,32 @@
                 <input type="submit" Value="Submit my Response">         
             </fieldset>
         </form>
+        <div class="hero-text">
+                <h2>Grow Your Business With Us</h2>
+                <button id="premium-btn">Get Premium - Only $4.99/mo</button>
+        </div>
+        <!-- Premium Modal -->
+    <dialog id="premium-modal">
+        <button class="close-btn">×</button>
+        <h2>Go Premium</h2>
+        <p>Unlock exclusive benefits!</p>
+        <div class="pricing">
+            <div class="price-card">
+                <h3>Monthly</h3>
+                <p class="price">$4.99<span>/month</span></p>
+                <button class="choose">Choose</button>
+            </div>
+            <div class="price-card best">
+                <h3>Yearly <span>Best Value</span></h3>
+                <p class="price">$29.99<span>/year</span></p>
+                <button class="choose">Choose</button>
+            </div>
+        </div>
+    </dialog>
     </main>
 
     <footer></footer>
     <script src="scripts/base.js"></script>
 </body>
+            
 </html>
