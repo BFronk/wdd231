@@ -33,6 +33,53 @@ if (welcomeMessage && addGameBtn && welcomeModal) {
         totalStrikes: 0
     };
 
+// Only run on community page
+if (document.getElementById('people-list')) {
+    GetData('data/members.json')
+        .then(data => {
+            if (data && data.members) {
+                generatePeopleFigures(data.members);
+            }
+        })
+        .catch(err => {
+            console.error("Failed to load:", err);
+        });
+}
+
+function generatePeopleFigures(personData) {
+    const mainGrid = document.querySelector('#people-list');
+    if (!mainGrid) return;
+
+    mainGrid.innerHTML = ''; // Clear existing content
+
+    personData.forEach(person => {
+        const card = document.createElement('div');
+        card.className = "card";
+
+        const name = document.createElement('h3');
+        name.className = "card-name";
+        name.innerHTML = `<strong>${person.name}</strong>`;
+
+        const phone = document.createElement('p');
+        phone.className = "card-phone";
+        phone.innerHTML = `Phone: ${person.phone}`;
+
+        const email = document.createElement('p');
+        email.className = "card-email";
+        email.innerHTML = `Email: <a href="mailto:${person.email}">${person.email}</a>`;
+
+        const stats = document.createElement('div');
+        stats.className = "bowling-stats";
+        stats.innerHTML = `
+            <p><strong>High Game:</strong> ${person.highgame}</p>
+            <p><strong>Average:</strong> ${person.average}</p>
+            <p><strong>Total Strikes:</strong> ${person.strikes}</p>
+        `;
+
+        card.append(name, phone, email, stats);
+        mainGrid.appendChild(card);
+    });
+}
     // Update welcome message
     function updateWelcome() {
         if (stats.games.length === 0) {

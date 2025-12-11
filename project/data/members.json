@@ -1,0 +1,40 @@
+{
+    "members": [
+        {
+            "name": "Sally",
+            "phone": "357-357-3906",
+            "email": "kjsdzfghcilusjhbdgfv@gmail.com",
+            "highgame": 250,
+            "strikes": 120,
+            "average": 180,
+            "image": "images/sally.png"
+        },
+        {
+            "name": "Jeff",
+            "phone": "536-729-6173",
+            "email": "hjsdgfvjagsBdzyf@gmail.com",
+            "highgame": 224,
+            "strikes": 87,
+            "average": 143,
+            "image": "images/jeff.png"
+        },
+        {
+            "name": "Bill",
+            "phone": "698-423-5485",
+            "email": "soigdvhjeazsijkd@gmail.com",
+            "highgame": 215,
+            "strikes": 95,
+            "average":  160,            
+            "image": "images/bill.png"
+        },
+        {
+            "name": "Bob",
+            "phone": "759-428-9142",
+            "email": "aguivhgsi@gmail.com",
+            "highgame": 198,
+            "strikes": 76,
+            "average": 135,
+            "image": "images/bob.png"
+        }
+    ]
+}
