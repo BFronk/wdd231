@@ -18,16 +18,14 @@ if (footer) {
     `;
 }
 
-// ========== BOWLING STATS WITH LOCALSTORAGE ==========
+// BOWLING STATS 
 const welcomeMessage = document.getElementById('welcome-message');
 const addGameBtn = document.getElementById('add-game-btn');
 const welcomeModal = document.getElementById('add-game-modal');
 const closeModal = document.querySelector('.close-modal');
 const gameForm = document.getElementById('game-form');
 
-// Only run bowling stats logic if elements exist (on home page)
 if (welcomeMessage && addGameBtn && welcomeModal) {
-    // Load stats from localStorage or initialize
     let stats = JSON.parse(localStorage.getItem('bowlingStats')) || {
         games: [],
         high: 0,
@@ -110,31 +108,24 @@ if (welcomeMessage && addGameBtn && welcomeModal) {
     updateWelcome();
 }
 
-// ========== JOIN FORM RESULTS PAGE (Thank You Page) ==========
 const resultsContainer = document.getElementById('results');
-if (resultsContainer) {
-    const params = new URLSearchParams(window.location.search);
+        if (resultsContainer) {
+            const params = new URLSearchParams(window.location.search);
 
-    // Safely get values with fallbacks
-    const firstName = params.get('first name') || params.get('firstname') || 'N/A';
-    const lastName = params.get('lastname') || params.get('last name') || 'N/A';
-    const email = params.get('email') || 'N/A';
-    const phone = params.get('phone') || 'N/A';
-    const membership = params.get('audience') || params.get('membership') || 'Not selected';
-    const org = params.get('org') || params.get('organization') || 'None provided';
-    const timestamp = new Date().toLocaleString();
+            const firstName = params.get('firstname') || 'N/A';
+            const lastName = params.get('lastname') || 'N/A';
+            const email = params.get('email') || 'N/A';
+            const phone = params.get('phone') || 'N/A';
+            const membership = params.get('membership') || 'Not selected';
+            const org = params.get('org') || 'None provided';
+            const description = params.get('description') || 'Not provided';
+            const timestamp = new Date().toLocaleString();
 
-    resultsContainer.innerHTML = `
-        <h2>Thank You for Joining!</h2>
-        <div style="background: #f0f8ff; padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
-            <p><strong>First Name:</strong> ${firstName}</p>
-            <p><strong>Last Name:</strong> ${lastName}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Phone:</strong> ${phone}</p>
-            <p><strong>Membership Level:</strong> ${membership}</p>
-            <p><strong>Organization/Business:</strong> ${org}</p>
-            <p><strong>Submitted on:</strong> ${timestamp}</p>
-        </div>
-        <p>We'll be in touch soon!</p>
-    `;
-}
+            resultsContainer.innerHTML = `
+                <p><strong>First Name:</strong> ${firstName}</p>
+                <p><strong>Last Name:</strong> ${lastName}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>Submitted:</strong> ${timestamp}</p>
+            `;
+        }
