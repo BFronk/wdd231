@@ -16,6 +16,8 @@ async function GetData(file) {
     return data;
 }
 
+
+
 //  Load data and render
 GetData('data/members.json')
     .then(data => {
